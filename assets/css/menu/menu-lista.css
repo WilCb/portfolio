@@ -1,0 +1,40 @@
+.menu__lista {
+    display: flex;
+    height: 88px;
+    align-items: center;
+}
+.menu__lista__item {
+    font-weight: 500;
+    margin-right: 32px;
+}
+.menu__lista__item:hover {
+    font-weight: 700;
+}
+.menu__contato {
+    font-weight: 700;
+}
+
+/* Responsivo */
+/* celular */
+
+@media screen and (min-width: 0) {
+    .menu__lista {
+        display: none;
+    }  
+}
+/* tablet */
+@media screen and (min-width: 480px) {
+    .menu__lista {
+        display: none;
+    }  
+}
+
+/* computador */
+@media screen and (min-width: 1024px) {
+    .menu__lista__item__contato {
+        display: none;
+    }  
+    .menu__lista {
+        display: flex;
+    }
+}

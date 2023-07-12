@@ -1,0 +1,14 @@
+.titulo__profile {
+    height: 368px;
+    width: 368px;
+    margin-left: 100px;
+}
+.titulo__bio {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 52px;
+}
+.titulo__subseção {
+    margin-top: 24px;
+    font-size: 22px;
+}

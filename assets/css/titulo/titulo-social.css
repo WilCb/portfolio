@@ -1,0 +1,10 @@
+.titulo__social {
+    display: flex;
+}
+.titulo__social__item {
+    margin-top: 24px;
+    margin-right: 32px;
+}
+.titulo__social__item:hover {
+    font-weight: 700;
+}

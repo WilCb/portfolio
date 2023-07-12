@@ -1,0 +1,9 @@
+.titulo__div {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 368px;
+    margin: 5%;
+    width: 100%;
+}

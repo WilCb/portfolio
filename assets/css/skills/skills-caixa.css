@@ -1,0 +1,12 @@
+.skills__caixa {
+    background: var(--branco);
+    padding: 16px;
+    Width: 80px;
+    Height: 80px;
+    margin-right: 32px;
+}
+.skills__caixa:hover {
+    Width: 82px;
+    Height: 82px;
+    background: var(--cor-azul-claro);
+}

@@ -1,0 +1,8 @@
+.menu__cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 0 32px 0 0;
+}
+.menu__titulo {
+    font-weight: 700;
+}
