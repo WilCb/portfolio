@@ -1,15 +1,31 @@
-.titulo__div {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: 5%;
-}
-@media screen and (max-width: 767px) {
+/* AJUSTA FOTO, TITULO E BIO COMO UM TODO */
+
+              /* MOBILE */
+@media screen and (min-width: 0) {
     .titulo__div {
+        display: flex;
         flex-direction: column;
-        width: 109%;
-        height: 294px;
+        margin: 16px;
+        padding: 16px;
     }
-    
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    .titulo__div {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 5%;
+    }
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .titulo__div {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 5%;
+    }
 }

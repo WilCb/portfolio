@@ -1,13 +1,14 @@
 .menu__cabecalho {
     display: flex;
-    align-items: center;
-}
+    align-items: center}
 .menu__titulo {
     font-weight: 700;
 }
 /*mobile*/
 @media screen and (min-width: 0) {
-    
+    .menu__titulo {
+        margin-right: 13vh;
+    }
 }
 /* tablet */
 @media screen and (min-width: 768px) {

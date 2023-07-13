@@ -1,11 +1,14 @@
+/* AJUSTE DA FOTO DE PERFIL, TEXTO DE TITULO E SUBTITULO*/
 
-              /* MOBILE */
+/* MOBILE */
 @media screen and (min-width: 0) {
     .titulo__profile {
         height: 98px;
         width: 98px;
-        margin-left: 100px;
-        margin-right: 57vh;
+        margin-left: 32px;
+    }
+    .titulo__container {
+        margin: 16px;
     }
     .titulo__subseção{
         font-size: 14px;

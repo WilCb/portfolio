@@ -1,19 +1,26 @@
-.menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 32px 0 32px;
-    padding: 32px 0 32px 0;
-}
-
 /*mobile*/
 @media screen and (min-width: 0) {
-    
+    .menu {
+        align-items: center;
+        display: flex;
+        padding: 16px;
+        justify-content: space-between;
+    }
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 32px 16px 32px;
+    }
 }
 /* desktop*/
 @media screen and (min-width: 1024px) {
-    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 32px 0 32px;
+        padding: 32px 0 32px 0;
+    }
 }
