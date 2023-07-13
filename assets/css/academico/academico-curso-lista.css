@@ -1,0 +1,21 @@
+.uncisal {
+    height: 130px;
+    margin-top: 32px;
+    width: 192px;
+}
+.senac {
+    height: 130px;
+    margin-top: 32px;
+    width: 192px;
+}
+.academico__curso__item__titulo {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 27%;
+
+}
+.academico__curso__item__subtitulo {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+}

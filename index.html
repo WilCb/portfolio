@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="assets/css/hobbies/hobbies-titulo.css">
     <link rel="stylesheet" href="assets/css/hobbies/hobbies-area.css">
     <link rel="stylesheet" href="assets/css/hobbies/hobbies-caixa.css">
+    <link rel="stylesheet" href="assets/css/academico/academico.css">
+    <link rel="stylesheet" href="assets/css/academico/academico-titulo.css">
+    <link rel="stylesheet" href="assets/css/academico/academico-curso-lista.css">
+    <link rel="stylesheet" href="assets/css/academico/academico-curso-caixa.css">
+    <link rel="stylesheet" href="assets/css/academico/academico-curso.css">
     <link rel="stylesheet" href="style.css">
     <title>Portifólio</title>
     
@@ -50,13 +55,13 @@
         <div class="titulo__div">
             <img class="titulo__profile" src="assets/imagem/eu_foto.png">
             <div class="titulo__container" id="#sobremim">
-                <h2 class="titulo__bio">Olá, meu nome é Williams S. Araujo e construo páginas web</h2>
-                <h3 class="titulo__subseção">Eu sou formado em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
+                <h2 class="titulo__bio">Olá, meu nome é Williams</h2>
+                <h3 class="titulo__subseção">Atualmente faço curso Técnico em Informática no SENAC e estou iniciando minha carreira no Front-End</h3>
                 <ul class="titulo__social">
                     
-                    <li class="titulo__social__item"><a href="#">Github <img src="assets/imagem/arrow.png"> </a></li>
-                    <li class="titulo__social__item"><a href="#">Linkedin <img src="assets/imagem/arrow.png"></a></li>
-                    <li class="titulo__social__item"><a href="#">Instagram <img src="assets/imagem/arrow.png"></a></li>
+                    <li class="titulo__social__item"><a href="https://github.com/WilCb">Github <img src="assets/imagem/arrow.png"> </a></li>
+                    <li class="titulo__social__item"><a href="https://www.linkedin.com/in/williams-araujo-front-end/">Linkedin <img src="assets/imagem/arrow.png"></a></li>
+                    <li class="titulo__social__item"><a href="https://www.instagram.com/wil_araaujo/">Instagram <img src="assets/imagem/arrow.png"></a></li>
                     <li class="titulo__social__item"><a href="#">Curriculo <img src="assets/imagem/arrow.png"></a></li>
                 </ul>
             </div>
@@ -65,32 +70,45 @@
     <section class="sobre">
         <div class="sobre__container">
             <h3 class="sobre__titulo">Sobre mim</h3>
-            <p class="sobre__paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-            <p class="sobre__paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+            <p class="sobre__paragrafo">Busco sempre conhecimento não gosto de ficar parado. </p>
+            <p class="sobre__paragrafo">Atualmente trabalho como CallCenter. Faço Lincenciatura em Ed. Física na UNCISAL, Técnico em Informática no SENAC e Curso de programação na Alura focado em Front-End.</p>
             <img src="assets/imagem/signature.png">
         </div>
     </section>
     <section class="skills">
         <h3 class="skills__titulo" id="skills">Skills</h3>
             <div class="skills__area">
+                
+                <div class="skills__caixa">
+                    <ul>
+                        <li class="skills__img"><img src="assets/imagem/sql.png"></li>
+                        <li class="skills__nome">SQL</li>
+                    </ul>
+                </div>
                 <div class="skills__caixa">
                     <ul>
                         <li class="skills__img"><img src="assets/imagem/htlm.png"></li>
-                        <li class="skills__name"> Html 5</li>
+                        <li class="skills__nome">Html 5</li>
                     </ul>
                 </div>
 
                 <div class="skills__caixa">
                     <ul>
                         <li class="skills__img"> <img src="assets/imagem/js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
+                        <li class="skills__nome">Javascript</li>
                     </ul>
                 </div>
 
                 <div class="skills__caixa">
                     <ul>
                         <li class="skills__img"> <img src="assets/imagem/css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
+                        <li class="skills__nome">CSS</li>
+                    </ul>
+                </div>
+                <div class="skills__caixa">
+                    <ul>
+                        <li class="skills__img"><img src="assets/imagem/portugol.png"></li>
+                        <li class="skills__nome">Portugol Studio</li>
                     </ul>
                 </div>
         </div>
@@ -98,27 +116,54 @@
     <section class="hobbies" id="hobbies">
         <h3 class="hobbies__titulo">Hobbies</h3>
             <div class="hobbies__area">
-
+                
+                <div class="hobbies__caixa">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets/imagem/game.png" alt=""></li>
+                        <li class="hobbies__nome">Jogar</li>
+                    </ul>
+                </div>
                 <div class="hobbies__caixa">
                     <ul>
                         <li class="hobbies__img"> <img src="assets/imagem/headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ouvir música</li>
+                        <li class="hobbies__nome">Ouvir música</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__caixa">
                     <ul>
                         <li class="hobbies__img"><img src="assets/imagem/tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Assistir séries</li>
+                        <li class="hobbies__nome">Assistir séries, fimes e animes</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__caixa">
                     <ul>
                         <li class="hobbies__img"> <img src="assets/imagem/camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tirar fotos</li>
+                        <li class="hobbies__nome">Tirar fotos</li>
                     </ul>
                 </div>
+        </div>
+    </section>
+    <section class="academico">
+        <h2 class="academico__titulo" id="formacao">Formação acadêmica</h2>
+        <div class="academico__curso">
+            <div class="academico__curso__caixa">
+                <ul class="academico__curso__lista">
+                    
+                    <li class="academico__curso__item__img"><img class="uncisal" src="assets/imagem/uncisal.png"></li>
+                    <li class="academico__curso__item__titulo"><h4>Licenciatura em Ed.Física</h4></li>
+                    <li class="academico__curso__item__subtitulo"><p>Em adamento - UNCISAL</p></li>
+                </ul>
+            </div>
+            <div class="academico__curso__caixa">
+                <ul class="academico__curso__lista">
+                    
+                    <li class="academico__curso__item__img"><img class="senac" src="assets/imagem/senac.png"></li>
+                    <li class="academico__curso__item__titulo"><h4>Técnico em Informática</h4></li>
+                    <li class="academico__curso__item__subtitulo"><p>Em andamento - SENAC</p></li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>

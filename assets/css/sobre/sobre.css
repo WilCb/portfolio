@@ -3,3 +3,13 @@
     background: #EAF2FD;
     padding: 64px;
 }
+.sobre__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 16px;
+}
+.sobre__paragrafo {
+    font-size: 16px;
+    line-height: 18.78px;
+    margin-top: 32px;
+}

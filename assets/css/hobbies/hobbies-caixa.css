@@ -1,11 +1,21 @@
 .hobbies__caixa {
     background: var(--branco);
-    padding: 16px;
-    Width: 80px;
-    Height: 80px;
+    padding: 25px;
+    Height: 100px;
+    transition: 0.5s;
+    Width: 100px;
 }
 .hobbies__caixa:hover {
-    Width: 82px;
-    Height: 82px;
     background: var(--cor-azul-claro);
+    Height: 101px;
+    Width: 101px;
+}
+.hobbies__img {
+    display: flex;
+    justify-content: center;
+}
+.hobbies__nome{
+    margin-top: 16px;
+    font-weight: 700;
+    text-align: center;
 }
