@@ -3,7 +3,13 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    height: 368px;
     margin: 5%;
-    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .titulo__div {
+        flex-direction: column;
+        width: 109%;
+        height: 294px;
+    }
+    
 }

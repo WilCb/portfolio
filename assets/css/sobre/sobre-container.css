@@ -1,0 +1,10 @@
+.sobre__container {
+
+}
+@media screen and(max-width: 480px) {
+    .sobre__container {
+        width: 328px;
+        height: 148px;
+        margin-top: 16px;
+    }
+}

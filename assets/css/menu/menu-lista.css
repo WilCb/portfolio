@@ -22,14 +22,18 @@
         display: none;
     }  
 }
+
+/*mobile*/
+@media screen and (min-width: 0) {
+    
+}
 /* tablet */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     .menu__lista {
         display: none;
     }  
 }
-
-/* computador */
+/* desktop*/
 @media screen and (min-width: 1024px) {
     .menu__lista__item__contato {
         display: none;

@@ -1,14 +1,14 @@
 .hobbies__caixa {
     background: var(--branco);
-    padding: 25px;
-    Height: 100px;
+    margin: 32px;
+    padding: 2%;
+    Width: 86px;
     transition: 0.5s;
-    Width: 100px;
 }
 .hobbies__caixa:hover {
     background: var(--cor-azul-claro);
-    Height: 101px;
-    Width: 101px;
+    -moz-box-shadow: 0px 20px 20px #86CEEB;
+    -webkit-box-shadow: 0px 20px 20px #86CEEB;
 }
 .hobbies__img {
     display: flex;

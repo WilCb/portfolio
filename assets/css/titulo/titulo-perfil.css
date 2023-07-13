@@ -12,3 +12,29 @@
     margin-top: 24px;
     font-size: 22px;
 }
+/* mobile */
+@media screen and (max-width: 767px) {
+    .titulo__subseção{
+        font-size: 14px;
+    }
+    .titulo__profile {
+        height: 98px;
+        width: 98px;
+        margin-left: 100px;
+        margin-right: 57vh;
+    }
+}
+
+
+/* até 1023 tablet*/
+
+@media screen and (max-width: 1023px) {
+    .titulo__bio {
+        font-size: 22px;
+    }
+    .titulo__profile {
+        height: 146px;
+        width: 146px;
+        margin: 0 66px 0 0;
+    }
+}

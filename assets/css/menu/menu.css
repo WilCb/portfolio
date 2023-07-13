@@ -1,5 +1,19 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    margin: 0 32px 0 32px;
+    padding: 32px 0 32px 0;
 }
 
+/*mobile*/
+@media screen and (min-width: 0) {
+    
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+/* desktop*/
+@media screen and (min-width: 1024px) {
+    
+}

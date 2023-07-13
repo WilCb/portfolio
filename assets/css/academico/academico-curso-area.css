@@ -1,6 +1,6 @@
-.hobbies__area {
+.academico__curso__area {
     margin-top: 32px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-around;
 }

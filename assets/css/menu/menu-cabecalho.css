@@ -1,8 +1,19 @@
 .menu__cabecalho {
     display: flex;
     align-items: center;
-    margin: 0 32px 0 0;
 }
 .menu__titulo {
     font-weight: 700;
+}
+/*mobile*/
+@media screen and (min-width: 0) {
+    
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+/* desktop*/
+@media screen and (min-width: 1024px) {
+    
 }

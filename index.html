@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="assets/css/academico/academico-titulo.css">
     <link rel="stylesheet" href="assets/css/academico/academico-curso-lista.css">
     <link rel="stylesheet" href="assets/css/academico/academico-curso-caixa.css">
-    <link rel="stylesheet" href="assets/css/academico/academico-curso.css">
+    <link rel="stylesheet" href="assets/css/academico/academico-curso-area.css">
+    <link rel="stylesheet" href="assets/css/formContato/formcontato.css">
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
     <link rel="stylesheet" href="style.css">
     <title>Portifólio</title>
     
@@ -46,9 +48,9 @@
                 <li class="menu__lista__item"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu__lista__item"><a href="#formacao">Formações e Cursos</a></li>
                 <li class="menu__lista__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__lista__item menu__contato"><a href="#contato">williams.lima989@gmail.com</a></li>
+                <li class="menu__lista__item menu__contato"><a href="#contato">williamsaraujo.dev@gmail.com</a></li>
             </ul>
-            <li class="menu__lista__item__contato"><a href="#contato">contato@fulana.com</a></li>
+            <li class="menu__lista__item__contato menu__contato"><a href="#contato">williamsaraujo.dev@gmail.com</a></li>
         </nav>
     </section>
     <section class="titulo">
@@ -147,7 +149,7 @@
     </section>
     <section class="academico">
         <h2 class="academico__titulo" id="formacao">Formação acadêmica</h2>
-        <div class="academico__curso">
+        <div class="academico__curso__area">
             <div class="academico__curso__caixa">
                 <ul class="academico__curso__lista">
                     
@@ -166,5 +168,33 @@
             </div>
         </div>
     </section>
+    <section class="formcontato">
+        <div id="contato" class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="assets/imagem/contact_image.png">
+            </div>
+            <div class="formcontato__texto">
+                <h2 class="formcontato__titulo">Contato</h2>
+                <h3 class="formcontato__subtexto">Quer entrar em contato comigo?</h3>
+                <h3 class="formcontato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                <form class="formcontato__form">
+                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
+                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
+                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                    <button class="formcontato__botao">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desenvolvido por Williams S. Araujo</p>
+            <p>2023</p>
+        </div>
+    </section>
+</div>
+
+<script src="validate.js"></script>
 </body>
 </html>

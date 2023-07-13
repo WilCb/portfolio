@@ -1,0 +1,8 @@
+.footer {
+    padding: 32px;
+    margin-top: 10px;
+}
+.footer__rodape {
+    text-align: center;
+    line-height: 18.75px;
+}
