@@ -1,6 +1,7 @@
 .skills__titulo {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
+    line-height: 25.83px;
     text-align: center;
 }
               /* MOBILE */
@@ -13,5 +14,9 @@
 }
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    
+    .skills__titulo {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.57px;
+    }
 }

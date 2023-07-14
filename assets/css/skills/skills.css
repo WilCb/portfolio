@@ -1,15 +1,23 @@
 .skills {
-    margin: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
               /* MOBILE */
 @media screen and (min-width: 0) {
-    
+    .skills {
+        padding: 16px;
+    }
 }
               /* TABLET */
 @media screen and (min-width: 768px) {
-    
+    .skills {
+        padding: 32px;
+    }
 }
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    
+    .skills {
+        padding: 0;
+    }
 }

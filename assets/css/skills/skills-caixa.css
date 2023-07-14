@@ -1,15 +1,16 @@
 .skills__caixa {
     background: var(--branco);
-    margin: 32px;
-    padding: 2%;
+    display: flex;
+    gap: 8px;
+    padding: 16px;
     transition: 0.5s;
-    Width: 86px;
+    Width: 156px;
 }
 .skills__caixa:hover {
     background: var(--cor-azul-claro);
+    border-radius: 5%;
     -moz-box-shadow: 0px 20px 20px #86CEEB;
     -webkit-box-shadow: 0px 20px 20px #86CEEB;
-    border-radius: 5%;
 }
 .skills__img {
     display: flex;
@@ -22,13 +23,17 @@
 }
               /* MOBILE */
 @media screen and (min-width: 0) {
-    
+
 }
               /* TABLET */
 @media screen and (min-width: 768px) {
-    
+    .skills__caixa {
+        Width: 156px;
+    }
 }
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    
+    .skills__caixa {
+        Width: 224px;
+    }
 }

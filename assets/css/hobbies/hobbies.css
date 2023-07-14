@@ -1,3 +1,23 @@
 .hobbies {
-    margin: 32px 32px 0 32px;
+    flex-direction: column;
+    display: flex;
+    gap: 32px;
+}
+              /* MOBILE */
+@media screen and (min-width: 0) {
+    .hobbies {
+        padding: 16px;
+    }
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    .hobbies {
+        padding: 32px;
+    }
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .hobbies {
+        padding: 0;
+    }
 }

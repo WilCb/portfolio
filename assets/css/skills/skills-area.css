@@ -1,7 +1,7 @@
 .skills__area {
-    margin-top: 32px;
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
+    justify-content: center;
     flex-wrap: wrap;
 }
               /* MOBILE */

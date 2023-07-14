@@ -1,31 +1,41 @@
 .titulo__social {
     display: flex;
 }
-.titulo__social__item {
-    margin-top: 24px;
-    margin-right: 32px;
-}
 .titulo__social__item:hover {
-    font-weight: 700;
     color: rgb(79, 74, 139);
+    font-weight: 700;
 }
 
               /* MOBILE */
 @media screen and (min-width: 0) {
     .titulo__social {
-        display: flex;
-        margin: 8px;
+        gap: 8px;
     }
     .titulo__social__item {
         font-size: 14px;
         font-weight: 600;
+        line-height: 16.44px;
     }
 }
               /* TABLET */
 @media screen and (min-width: 768px) {
-    
+    .titulo__social {
+        gap: 32px;
+    }
+    .titulo__social__item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
 }
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    
+    .titulo__social {
+        gap: 32px;
+    }
+    .titulo__social__item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
 }
