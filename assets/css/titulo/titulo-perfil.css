@@ -10,11 +10,14 @@
     .titulo__container {
         margin: 16px;
     }
-    .titulo__subseção{
-        font-size: 14px;
-    }
     .titulo__bio {
         font-size: 22px;
+        font-weight: 700;
+    }
+    .titulo__subseção{
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 16.44px;
     }
     
 }
@@ -23,6 +26,7 @@
 @media screen and (min-width: 768px) {
     .titulo__bio {
         font-size: 22px;
+        font-weight: 700;
     }
     .titulo__profile {
         height: 146px;

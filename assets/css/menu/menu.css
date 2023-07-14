@@ -6,6 +6,9 @@
         padding: 16px;
         justify-content: space-between;
     }
+    .menu__contato a {
+        font-weight: 400;
+    }
 }
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -13,6 +16,9 @@
         display: flex;
         justify-content: space-between;
         padding: 16px 32px 16px 32px;
+    }
+    .menu__contato a {
+        font-weight: 700;
     }
 }
 /* desktop*/

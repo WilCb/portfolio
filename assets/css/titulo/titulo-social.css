@@ -11,7 +11,14 @@
 
               /* MOBILE */
 @media screen and (min-width: 0) {
-    
+    .titulo__social {
+        display: flex;
+        margin: 8px;
+    }
+    .titulo__social__item {
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
               /* TABLET */
 @media screen and (min-width: 768px) {
