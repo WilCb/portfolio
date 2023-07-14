@@ -5,10 +5,11 @@
     .titulo__profile {
         height: 98px;
         width: 98px;
-        margin-left: 32px;
     }
     .titulo__container {
-        margin: 16px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
     }
     .titulo__bio {
         font-size: 22px;
@@ -16,7 +17,6 @@
     }
     .titulo__subseção{
         font-size: 14px;
-        margin-top: 10px;
         line-height: 16.44px;
     }
     
@@ -31,7 +31,7 @@
     .titulo__profile {
         height: 146px;
         width: 146px;
-        margin: 0 66px 0 0;
+       
     }
 }
 
@@ -46,9 +46,11 @@
         margin-top: 30px;
         font-weight: 700;
         font-size: 52px;
+        line-height: 61.05px;
     }
     .titulo__subseção {
         margin-top: 24px;
         font-size: 22px;
+        line-height: 22.83px;
     }
 }

@@ -1,3 +1,15 @@
 .skills {
     margin: 32px 32px 0 32px;
 }
+              /* MOBILE */
+@media screen and (min-width: 0) {
+    
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    
+}

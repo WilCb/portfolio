@@ -1,10 +1,41 @@
-.sobre__container {
 
-}
-@media screen and(max-width: 480px) {
+              /* MOBILE */
+@media screen and (min-width: 0) {
     .sobre__container {
-        width: 328px;
-        height: 148px;
-        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+    }
+    .assinatura__imagem {
+        background-image: url(../../imagem/signature.png);
+        background-repeat: no-repeat;
+        height: 50px;
+    }
+    
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    .sobre__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16 px; 
+    }
+    .assinatura__imagem {
+        background-image: url(../../imagem/signature.png);
+        background-repeat: no-repeat;
+        height: 50px;
+    }
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .sobre__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+    } 
+    .assinatura__imagem {
+        background-image: url(../../imagem/signature.png);
+        background-repeat: no-repeat;
+        height: 50px;
     }
 }

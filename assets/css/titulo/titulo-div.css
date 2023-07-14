@@ -2,12 +2,7 @@
 
               /* MOBILE */
 @media screen and (min-width: 0) {
-    .titulo__div {
-        display: flex;
-        flex-direction: column;
-        margin: 16px;
-        padding: 16px;
-    }
+    
 }
               /* TABLET */
 @media screen and (min-width: 768px) {
