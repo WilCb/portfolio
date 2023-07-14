@@ -17,6 +17,7 @@
     justify-content: center;
 }
 .skills__nome {
+    color: #464646;
     font-weight: 700;
     margin-top: 16px;
     text-align: center;

@@ -1,5 +1,23 @@
 .academico {
     background: var(--cor-azul-claro);
-    margin-top: 32px;
-    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+              /* MOBILE */
+@media screen and (min-width: 0) {
+
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .academico {
+        padding: 82px;
+        margin-top: 32px;
+    }
 }

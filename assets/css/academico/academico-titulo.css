@@ -1,5 +1,22 @@
 .academico__titulo {
-    font-size: 32px;
+    color: #464646;
+    font-size: 22px;
     font-weight: 700;
+    line-height: 25.83px;
     text-align: center;
+}
+              /* MOBILE */
+@media screen and (min-width: 0) {
+    
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .academico__titulo {
+        font-size: 32px;
+        line-height: 37.57px;
+    }
 }

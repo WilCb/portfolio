@@ -1,3 +1,8 @@
+.academico__curso__lista {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
 .uncisal {
     height: 130px;
     margin-top: 32px;
@@ -9,13 +14,33 @@
     width: 192px;
 }
 .academico__curso__item__titulo {
+    color: #464646;
     font-weight: 700;
-    font-size: 22px;
-    margin-top: 27%;
-
+    font-size: 16px;
+    line-height: 18.78px;
 }
 .academico__curso__item__subtitulo {
-    font-size: 16px;
+    color: #464646;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 18.78px;
+    line-height: 16.44px;
+}
+              /* MOBILE */
+@media screen and (min-width: 0) {
+    
+}
+              /* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+              /* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .academico__curso__item__titulo {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+    .academico__curso__item__subtitulo {
+        line-height: 18.78px;
+    }
 }
