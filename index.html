@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="assets/css/footer/footer.css">
     <link rel="stylesheet" href="assets/css/formContato/formcontato-form.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/experiência/experiencia.css">
+    <link rel="stylesheet" href="assets/css/experiência/experienciaCaixa.css">
     <title>Portifólio</title>
     
 </head>
@@ -169,21 +171,52 @@
             </div>
         </div>
     </section>
+    <section class="experiencia">
+        <h2 class="experiencia__seção__titulo" id="xp">Experiência Profissional</h2>
+        <div class="experiencia__caixa">
+            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <img class="experiencia__img" src="assets/imagem/Ceep.png">
+            <div class="experiencia__info">
+                <h2 class="experiencia__titulo">Ceep - criar lista de tarefa</h2>
+                <h3 class="experiencia__text">Curso alura - JavaScript na Web: manipule o DOM com JavaScript</h3>
+                    <div class="experiencia__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                            <span class="experiencia__repo"><a href="https://github.com/WilCb/ceep"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experiencia__demo"><a href="https://wilcb.github.io/ceep/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div> 
+        <div class="experiencia__caixa">
+            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <img class="experiencia__img" src="assets/imagem/array.png">
+            <div class="experiencia__info">
+                <h2 class="experiencia__titulo">JavaScript: métodos de array</h2>
+                <h3 class="experiencia__text">Curso Alura - Pagina de venda fictícia para manipular métodos arrays</h3>
+                    <div class="experiencia__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                            <span class="experiencia__repo"><a href="https://github.com/WilCb/alurabook"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experiencia__demo"><a href="https://wilcb.github.io/alurabook/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>
+    </section>
     <section class="formcontato">
         <div id="contato" class="formcontato__contacto">
             <div class="formcontato--esquerda">
                 <img class="formcontato__img" src="assets/imagem/contact_image.png">
             </div>
             <div class="formcontato__texto">
-                <h2 class="formcontato__titulo">Contato</h2>
-                <h3 class="formcontato__subtexto">Quer entrar em contato comigo?</h3>
-                <h3 class="formcontato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                <div class="form__topo">
+                    <h2 class="formcontato__titulo">Contato</h2>
+                    <h3 class="formcontato__subtexto">Quer entrar em contato comigo?</h3>
+                    <h3 class="formcontato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                </div>
                 <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome" data-nome>
+                    <input class="formcontato__input" type="email" id="email" placeholder="Email" data-email>
+                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" data-assunto>
                     <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-                    <button class="formcontato__botao">Enviar mensagem</button>
+                    <button class="formcontato__botao" id="btn_enviar">Enviar mensagem</button>
                 </form>
             </div>
         </div>

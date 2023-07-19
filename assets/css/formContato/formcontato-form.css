@@ -1,21 +1,27 @@
 .formcontato__form {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    gap: 32px;
 }
 .formcontato__input {
-    margin-top: 8px;
-    height: 50px;
-    padding: 0 35px;
-    width: 83%;
+    border-radius: 5px;
+    gap: 8px;
+    width: 286px;
+    height: 56px;
+    display: flex;
+    position: relative;
+    padding: 0 12px 0 12px;
+    top: 8px;
     -moz-box-shadow: 0px 5px 5px #636379;
     -webkit-box-shadow: 0px 5px 5px #636379;
 }
+
 .formcontato__textarea {
-    margin-top: 8px;
+    border-radius: 4px;
+    width: 296px;
     height: 133px;
-    padding: 32px;
-    width: 84%;
+    gap: 8px;
+    display: flex;
     -moz-box-shadow: 0px 5px 5px #636379;
     -webkit-box-shadow: 0px 5px 5px #636379;
 }
@@ -32,4 +38,16 @@
 .formcontato__botao:hover {
     background: #636379;
     color: black;
+}
+/*mobile*/
+@media screen and (min-width: 0) {
+    
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+/* desktop*/
+@media screen and (min-width: 1024px) {
+    
 }
