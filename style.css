@@ -7,7 +7,26 @@
     list-style: none;
 }
 body {
+    width: 100%;
     background: #F5F5F5;
     font-family: 'Raleway';
     line-height: 1;
+}
+/*mobile*/
+@media screen and (min-width: 0) {
+
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+
+}
+/* desktop*/
+@media screen and (min-width: 1024px) {
+
+} 
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 360px;
+    }
 }

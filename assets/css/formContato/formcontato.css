@@ -18,7 +18,6 @@
     color: #464646;
     font-size: 22px;
     font-weight: 700;
-    gap: 8px;
     line-height: 25.83px;
 }
 .formcontato__texto {
@@ -33,6 +32,12 @@
 }
 /*mobile*/
 @media screen and (min-width: 0) {
+    .formcontato {
+        width: 360px;
+    }
+    .formcontato__contacto {
+        gap: 16px;
+    }
     .formcontato__img {
         display: none;
     }
