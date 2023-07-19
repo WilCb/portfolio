@@ -28,15 +28,18 @@
 /*mobile*/
 @media screen and (min-width: 0) {
     .experiencia__caixa {
+        align-items: flex-start;
         flex-direction: column;
         gap: 16px;
     }
     .experiencia__img {
         height: 144px;
         width: 296px;
+        
     }
     .experiencia__info {
         gap: 8px;
+        align-items: flex-start;
     }
     .experiencia__titulo {
         font-weight: 700;
@@ -76,16 +79,26 @@
 /* tablet */
 @media screen and (min-width: 768px) {
     .experiencia__caixa {
-
+        align-items: center;
     }
     .experiencia__img {
-        height: 144px;
-        width: 296px;
+        height: 320px;
+        width: 100vh;
+        align-items: center;
+    }
+    .experiencia__info {
+        gap: 8px;
+        align-items: center;
     }
 }
 /* desktop*/
 @media screen and (min-width: 1024px) {
     .experiencia__caixa {
+        align-items: flex-start;
 
+    }
+    .experiencia__info {
+        gap: 8px;
+        align-items: flex-start;
     }
 } 
