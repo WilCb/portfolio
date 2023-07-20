@@ -38,6 +38,7 @@
 .formcontato__botao:hover {
     background: #636379;
     color: black;
+    cursor: pointer;
 }
 /*mobile*/
 @media screen and (min-width: 0) {

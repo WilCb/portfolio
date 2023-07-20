@@ -34,6 +34,9 @@
         font-size: 22px;
         font-weight: 700;
     }
+    .titulo__subseção{
+        margin-right: 5%;
+    }
 }
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
