@@ -21,6 +21,6 @@
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
     .titulo {
-
+        width: 100%;
     }
 }
