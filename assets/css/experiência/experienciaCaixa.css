@@ -89,6 +89,10 @@
     .experiencia__caixa {
         flex-direction: row;
     }
+    .experiencia__caixa--invertida {
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .experiencia__img {
         height: 426px;
         width: 752px;

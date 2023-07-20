@@ -5,6 +5,7 @@
               /* MOBILE */
 @media screen and (min-width: 0) {
     .titulo {
+        width: 26rem;
         gap: 16px;
         padding: 16px;
     }
@@ -12,6 +13,7 @@
               /* TABLET */
 @media screen and (min-width: 768px) {
     .titulo {
+        width: 57rem;
         gap: 32px;
         padding: 32px;
     }
@@ -19,8 +21,6 @@
               /* DESKTOP */
 @media screen and (min-width: 1024px) {
     .titulo {
-        justify-content: space-between;
-        padding: 0;
-        gap: 0;
+
     }
 }

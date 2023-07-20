@@ -6,8 +6,8 @@
 * {
     list-style: none;
 }
+
 body {
-    width: 100%;
     background: #F5F5F5;
     font-family: 'Raleway';
     line-height: 1;
@@ -23,10 +23,4 @@ body {
 /* desktop*/
 @media screen and (min-width: 1024px) {
 
-} 
-
-@media screen and (max-width: 767px) {
-    body {
-        width: 360px;
-    }
 }
