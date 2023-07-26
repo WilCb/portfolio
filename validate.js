@@ -3,8 +3,8 @@ function validaformulario(evento){
     var email = document.getElementById("email").value;
     var assunto = document.getElementById("assunto").value;
     var mensagem = document.getElementById("mensagem").value;
-
-    if (nome == "" || email == "" || assunto == "" || mensagem == ""){
+    var inputs = [nome, email, assunto, mensagem]
+    if (inputs.length == ""){
         evento.preventDefault()
         alert("Por favor, preencha todos os campos.");
 
