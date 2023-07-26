@@ -61,6 +61,8 @@
     }
     .formcontato {
         padding: 64px;
+        justify-content: center;
+        gap: 10px;
     }
     .formcontato__contacto {
         gap: 16px;
