@@ -42,7 +42,7 @@
 /*mobile*/
 @media screen and (min-width: 0) {
     .formcontato__input {
-        border-radius: 4px;
+        border-radius: 24px;
         display: flex;
         gap: 8px;
         height: 56px;
@@ -57,5 +57,12 @@
 }
 /* desktop*/
 @media screen and (min-width: 1024px) {
-    
+    .formcontato__input {
+        width: 400px;
+    }
+    .formcontato__textarea {
+        width: 400px;
+        border-radius: 24px;
+        padding-left: 20px;
+    }
 }
