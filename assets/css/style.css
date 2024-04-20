@@ -1,0 +1,10 @@
+@import url('./abstract/reset.css');
+
+@import url('./components/header.css');
+@import url('./components/presentation.css');
+@import url('./components/about.css');
+@import url('./components/skills.css');
+@import url('./components/academic.css');
+@import url('./components/experience.css');
+@import url('./components/form.css');
+@import url('./components/footer.css');

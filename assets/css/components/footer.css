@@ -1,0 +1,16 @@
+@import url('../abstract/variaveis.css');
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-tertiary-bd);
+}
+
+.footer span {
+    color: var(--color-primary-text);
+    font-size: var(--size-text-subtitle-m);
+    font-weight: 500;
+}

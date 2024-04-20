@@ -1,0 +1,36 @@
+/*
+
+t = Tablet
+m = Mobile
+d = Desktop
+
+*/
+
+:root{
+    /* Text Color */
+    --color-primary-text: #464646;
+    --color-secondary-text: #2A7AE4;
+    --color-tertiary-text: #FFFFFF;
+
+    /* Text size mobile */
+    --size-text-title-m: 1.375rem; /* 22px */
+    --size-text-subtitle-m: 1rem;  /* 16px */
+    --size-text-text-m: 0.875rem;  /* 14px */
+
+    /* Text size Desktop */
+    --size-text-supertitle-d: 3.25rem; /* 52px */
+    --size-text-title-d: 2rem;         /* 32px */
+    --size-text-subtitle-d: 1.375rem;  /* 22px */
+    --size-text-text-d: 1rem;          /* 16px */
+
+    /* Text Placeholder */
+    --color-placeholder-text: #A2A2A2;
+    --color-placeholder-email-text: #2A7AE4;
+    --size-placeholder-text: 0.75rem;  /* 12px */
+
+
+    /* Background */
+    --color-primary-bd: #F5F5F5;
+    --color-secondary-bd: #EAF2FD;
+    --color-tertiary-bd: #FFFFFF;
+}

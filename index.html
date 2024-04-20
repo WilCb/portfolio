@@ -1,236 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="assets/imagem/portfolio.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/menu/menu.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-cabecalho.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
-    <link rel="stylesheet" href="logo.css">
-    <link rel="stylesheet" href="assets/css/titulo/titulo-div.css">
-    <link rel="stylesheet" href="assets/css/titulo/titulo.css">
-    <link rel="stylesheet" href="assets/css/titulo/titulo-perfil.css">
-    <link rel="stylesheet" href="assets/css/titulo/titulo-social.css">
-    <link rel="stylesheet" href="assets/css/sobre/sobre.css">
-    <link rel="stylesheet" href="assets/css/sobre/sobre-container.css">
-    <link rel="stylesheet" href="assets/css/skills/skills.css">
-    <link rel="stylesheet" href="assets/css/skills/skills-titulo.css">
-    <link rel="stylesheet" href="assets/css/skills/skills-area.css">
-    <link rel="stylesheet" href="assets/css/skills/skills-caixa.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-titulo.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-area.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-caixa.css">
-    <link rel="stylesheet" href="assets/css/academico/academico.css">
-    <link rel="stylesheet" href="assets/css/academico/academico-titulo.css">
-    <link rel="stylesheet" href="assets/css/academico/academico-curso-lista.css">
-    <link rel="stylesheet" href="assets/css/academico/academico-curso-caixa.css">
-    <link rel="stylesheet" href="assets/css/academico/academico-curso-area.css">
-    <link rel="stylesheet" href="assets/css/formContato/formcontato.css">
-    <link rel="stylesheet" href="assets/css/footer/footer.css">
-    <link rel="stylesheet" href="assets/css/formContato/formcontato-form.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/experiência/experiencia.css">
-    <link rel="stylesheet" href="assets/css/experiência/experienciaCaixa.css">
-    <title>Portifólio</title>
     
+
 </head>
+
 <body>
-    <section class="menu">
-        <header class="menu__cabecalho">
-            <img class="logo" src="assets/imagem/vector.png">
-            <h3 class="menu__titulo">Williams dos S. Araujo.</h3>
-        </header>
+
+    <header class="header__container">
+        <div class="header__logo">
+            <img src="assets/imagem/vector.png">
+            <h1 class="header__title">Williams dos S. Araujo.</h1>
+        </div>
         <nav>
-            <ul class="menu__lista">
-                <li class="menu__lista__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__lista__item"><a href="#skills">Skills</a></li>
-                <li class="menu__lista__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__lista__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__lista__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__lista__item menu__contato"><a href="#contato">williamsaraujo.dev@gmail.com</a></li>
+            <ul class="links">
+                <li class="link__item"><a href="#sobremim">Sobre mim</a></li>
+                <li class="link__item"><a href="#skills">Skills</a></li>
+                <li class="link__item"><a href="#formacao">Formações e Cursos</a></li>
+                <li class="link__item"><a href="#xp">Experiência</a></li>
+                <li class="link__item menu__contato"><a href="#contato">williamsaraujo.dev@gmail.com</a></li>
             </ul>
-            <li class="menu__lista__item__contato menu__contato"><a href="#contato">williamsaraujo.dev@gmail.com</a></li>
         </nav>
-    </section>
-    <section class="titulo">
-        <div class="titulo__div">
-            <img class="titulo__profile" src="assets/imagem/eu_foto.png">
-            <div class="titulo__container" id="#sobremim">
-                <h2 class="titulo__bio">Olá, meu nome é Williams</h2>
-                <h3 class="titulo__subseção">Atualmente faço curso Técnico em Informática no SENAC e estou iniciando minha carreira no Front-End</h3>
-                <ul class="titulo__social">
-                    
-                    <li class="titulo__social__item"><a class="link-hover" href="https://github.com/WilCb">Github <img src="assets/imagem/arrow.png"> </a></li>
-                    <li class="titulo__social__item"><a class="link-hover" href="https://www.linkedin.com/in/williams-araujo-front-end/">Linkedin <img src="assets/imagem/arrow.png"></a></li>
-                    <li class="titulo__social__item"><a class="link-hover" href="https://www.instagram.com/wil_araaujo/">Instagram <img src="assets/imagem/arrow.png"></a></li>
-                    <li class="titulo__social__item"><a class="link-hover" href="assets/imagem/CURRICULO - PORTFOLIO.pdf">Curriculo <img src="assets/imagem/arrow.png"></a></li>
-                    <li class="titulo__social__item"><a class="link-hover" href="https://cursos.alura.com.br/user/Williams-lima989/fullCertificate/6e165fa62fa26eb2075742953d4754cf">Certificado Alura <img src="assets/imagem/arrow.png"></a></li>
+    </header>
+
+    <main>
+
+        <section class="presentation">
+            <img class="presentation__profile" src="assets/imagem/eu_foto.png">
+            <div class="presentation__container" id="#sobremim">
+                <h2 class="presentation__title">Olá, meu nome é Williams</h2>
+                <h3 class="presentation__text">
+                    Concluí o curso <strong>Técnico em Informática</strong> no SENAC em <strong>fevereiro de
+                        2024</strong> e atualmente estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong>
+                    na UNOPAR. Meu foco de carreira é tornar-me um <strong>desenvolvedor FullStack</strong>, começando
+                    pela <strong>especialização em front-end</strong>.
+                </h3>
+                <ul class="presentation__links">
+
+                    <li class="presetation__link__item"><a class="link-hover" href="https://github.com/WilCb">Github
+                            <img src="./assets/imagem/arrow_back.svg"> </a></li>
+                    <li class="presetation__link__item"><a class="link-hover"
+                            href="https://www.linkedin.com/in/williams-araujo-front-end/">Linkedin <img
+                                src="./assets/imagem/arrow_back.svg"></a></li>
+                    <li class="presetation__link__item"><a class="link-hover"
+                            href="https://www.instagram.com/wil_araaujo/">Instagram <img
+                                src="./assets/imagem/arrow_back.svg"></a></li>
+                    <li class="presetation__link__item"><a class="link-hover"
+                            href="assets/imagem/CURRICULO - PORTFOLIO.pdf">Curriculo <img
+                                src="./assets/imagem/arrow_back.svg"></a></li>
+                    <li class="presetation__link__item"><a class="link-hover"
+                            href="https://cursos.alura.com.br/user/Williams-lima989/fullCertificate/6e165fa62fa26eb2075742953d4754cf">Certificado
+                            Alura <img src="./assets/imagem/arrow_back.svg"></a></li>
                 </ul>
             </div>
-        </div>
-    </section>
-    <section class="sobre">
-        <div class="sobre__container">
-            <h3 class="sobre__titulo">Sobre mim</h3>
-            <p class="sobre__paragrafo">Busco sempre conhecimento não gosto de ficar parado. </p>
-            <p class="sobre__paragrafo">Atualmente trabalho como CallCenter. Faço Lincenciatura em Ed. Física na UNCISAL, Técnico em Informática no SENAC e Curso de programação na Alura focado em Front-End.</p>
-            <div class="assinatura__imagem"></div>
-        </div>
-    </section>
-    <section class="skills">
-        <h3 class="skills__titulo" id="skills">Skills</h3>
-            <div class="skills__area">
-                
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"><img src="assets/imagem/sql.png"></li>
-                        <li class="skills__nome">SQL</li>
-                    </ul>
-                </div>
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"><img src="assets/imagem/htlm.png"></li>
-                        <li class="skills__nome">Html 5</li>
-                    </ul>
-                </div>
+        </section>
 
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/imagem/js_icon.png" alt=""></li>
-                        <li class="skills__nome">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/imagem/css_icon.png" alt=""> </li>
-                        <li class="skills__nome">CSS</li>
-                    </ul>
-                </div>
-                <div class="skills__caixa">
-                    <ul>
-                        <li class="skills__img"><img src="assets/imagem/portugol.png"></li>
-                        <li class="skills__nome">Portugol Studio</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__titulo">Hobbies</h3>
-            <div class="hobbies__area">
-                
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets/imagem/game.png" alt=""></li>
-                        <li class="hobbies__nome">Jogar</li>
-                    </ul>
-                </div>
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets/imagem/headphones_icon.png" alt=""></li>
-                        <li class="hobbies__nome">Ouvir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets/imagem/tv_icon.png" alt=""></li>
-                        <li class="hobbies__nome">Assistir séries, fimes e animes</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__caixa">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets/imagem/camera_icon.png" alt=""> </li>
-                        <li class="hobbies__nome">Tirar fotos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-    <section class="academico">
-        <h2 class="academico__titulo" id="formacao">Formação acadêmica</h2>
-        <div class="academico__curso__area">
-            <div class="academico__curso__caixa">
-                <ul class="academico__curso__lista">
-                    
-                    <li class="academico__curso__item__img"><img class="uncisal" src="assets/imagem/uncisal.png"></li>
-                    <li class="academico__curso__item__titulo"><h4>Licenciatura em Ed.Física</h4></li>
-                    <li class="academico__curso__item__subtitulo"><p>Em adamento - UNCISAL</p></li>
-                </ul>
+        <section class="about">
+            <h2 class="about__title">Sobre mim</h2>
+            <p class="about__text">Estou sempre em busca de novas oportunidades para me desenvolver.</p>
+            <p class="about__text">
+                Sempre tive interesse pela área de desenvolvimento web e aplicações,
+                tenho o compromisso contínuo com cursos de especialização e em projetos práticos que me desafiam a
+                aprimorar minhas habilidades.
+                Além disso, minha curiosidade estende-se para além do desenvolvimento, abrangendo também áreas como
+                design e outras disciplinas relacionadas à tecnologia.
+                Estou constantemente buscando ampliar meu entendimento e experiência em todas as facetas do campo
+                tecnológico.</p>
             </div>
-            <div class="academico__curso__caixa">
-                <ul class="academico__curso__lista">
-                    
-                    <li class="academico__curso__item__img"><img class="senac" src="assets/imagem/senac.png"></li>
-                    <li class="academico__curso__item__titulo"><h4>Técnico em Informática</h4></li>
-                    <li class="academico__curso__item__subtitulo"><p>Em andamento - SENAC</p></li>
-                </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title" id="skills">Skills</h2>
+            <div class="skills__content">
+                <div class="skill__box">
+                    <img class="skills__img" src="assets/imagem/sql.png" alt="">
+                    <span class="skills__name">SQL</span>
+                </div>
+                <div class="skill__box">
+                    <img class="skills__img" src="./assets/imagem/htlm.png" alt="">
+                    <span class="skills__name">HTML</span>
+
+                </div>
+
+                <div class="skill__box">
+                    <img class="skills__img" src="./assets/imagem/js_icon.png" alt="">
+                    <span class="skills__name">JavaScript</span>
+                </div>
+
+                <div class="skill__box">
+                    <img class="skills__img" src="./assets/imagem/css_icon.png" alt="">
+                    <span class="skills__name">CSS</span>
+                </div>
+
+                <div class="skill__box">
+                    <img class="skills__img" src="./assets/imagem/portugol.png" alt="">
+                    <span class="skills__name">Portugol Studio</span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="experiencia">
-        <h2 class="experiencia__seção__titulo" id="xp">Experiência Profissional</h2>
-        <div class="experiencia__caixa">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experiencia__img" src="assets/imagem/Ceep.png">
-            <div class="experiencia__info">
-                <h2 class="experiencia__titulo">Ceep - criar lista de tarefa</h2>
-                <h3 class="experiencia__text">Curso alura - JavaScript na Web: manipule o DOM com JavaScript</h3>
-                    <div class="experiencia__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experiencia__repo"><a href="https://github.com/WilCb/ceep"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experiencia__demo"><a href="https://wilcb.github.io/ceep/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+        </section>
+
+        <section class="academic">
+            <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+            <div class="academic__content">
+                <div class="academic__box">
+                    <div class="academic__image">
+                        <img src="./assets/imagem/unopar.png" alt="">
                     </div>
-            </div>
-        </div> 
-        <div class="experiencia__caixa experiencia__caixa--invertida">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experiencia__img" src="assets/imagem/array.png">
-            <div class="experiencia__info">
-                <h2 class="experiencia__titulo">JavaScript: métodos de array</h2>
-                <h3 class="experiencia__text">Curso Alura - Pagina de venda fictícia para manipular métodos arrays</h3>
-                    <div class="experiencia__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experiencia__repo"><a href="https://github.com/WilCb/alurabook"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experiencia__demo"><a href="https://wilcb.github.io/alurabook/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="formcontato">
-        <div id="contato" class="formcontato__contacto">
-            <div class="formcontato--esquerda">
-                <img class="formcontato__img" src="assets/imagem/contact_image.png">
-            </div>
-            <div class="formcontato__texto">
-                <div class="form__topo">
-                    <h2 class="formcontato__titulo">Contato</h2>
-                    <h3 class="formcontato__subtexto">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtexto">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                </div>
-                <form class="formcontato__form" action="https://formsubmit.co/williamsaraujo.dev@gmail.com" method="POST">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-                    <button class="formcontato__botao" id="btn_enviar">Enviar mensagem</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer__rodape">
-            <p>Desenvolvido por Williams S. Araujo</p>
-            <p>2023</p>
-        </div>
-    </section>
-    <script src="validate.js"></script>
-</div>
 
-<script src="validate.js"></script>
+                    <h3 class="academic__box__subtitle">Análise e Des. de Sistemas</h3>
+                    <span class="academic__box__text">Status: Em andamento - previsto 09/2026</span>
+
+                </div>
+                <div class="academic__box">
+                    <div class="academic__image">
+                        <img src="./assets/imagem/senac.png" alt="">
+                    </div>
+
+                    <h3 class="academic__box__subtitle">Técnico em Informática</h3>
+                    <span class="academic__box__text">Status: Concluido em 02/2024</span>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 class="experience__title" id="xp">Experiência Profissional</h2>
+            <div class="experience__content">
+                <div class="experience__box__img">
+                    <img src="assets/imagem/Ceep.png">
+                </div>
+                <div class="experience__info">
+                    <h2 class="experience__subtitle">Ceep - criar lista de tarefa</h2>
+                    <span class="experience__text">Curso alura - JavaScript na Web: manipule o DOM com JavaScript</span>
+
+                    <div class="experience__btns">
+                        <a class="btn" href="https://github.com/WilCb/ceep" target="_blank">Repositório</a>
+                        <a class="btn btn__demo" href="https://wilcb.github.io/ceep/" target="_blank">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="experience__content experience__content--reverse">
+                <div class="experience__box__img">
+                    <img src="assets/imagem/array.png">
+                </div>
+                <div class="experience__info">
+                    <h2 class="experience__subtitle">JavaScript: métodos de array</h2>
+                    <span class="experience__text">Curso Alura - Pagina de venda fictícia para manipular métodos arrays
+                    </span>
+
+                    <div class="experience__btns">
+                        <a class="btn" href="https://github.com/WilCb/alurabook" target="_blank">Repositório</a>
+                        <a class="btn btn__demo" href="https://wilcb.github.io/alurabook/" target="_blank">Ver demo</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="form">
+        <img class="form__img" src="assets/imagem/contact_image.png">
+        <form class="form__content" action="https://formsubmit.co/williamsaraujo.dev@gmail.com" method="POST">
+            <div class="form__presentation">
+                <h2 class="form__title">Contato</h2>
+                <p class="form__text">Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato
+                    o mais rápido
+                    possível. </p>
+            </div>
+            <div class="form__inputs">
+                <div class="input__box">
+                    <input class="form__input" type="text" id="nome" name="nome">
+                    <span class="placeholder">Nome</span>
+                </div>
+
+                <div class="input__box">
+                    <input class="form__input form__input__email" type="email" id="email" name="email">
+                    <span class="placeholder placeholder__email">E-mail</span>
+                </div>
+
+                <div class="input__box">
+                    <input class="form__input" type="text" id="assunto" name="assunto">
+                    <span class="placeholder">Assunto</span>
+                </div>
+
+                <div class="input__box">
+                    <textarea class="form__input" rows="5" cols="40" id="mensagem" name="mensagem"></textarea>
+                    <span class="placeholder placeholder__textarea">Mensagem</span>
+                </div>
+
+            </div>
+            <button class="btn btn__demo" id="btn_enviar">Enviar mensagem</button>
+        </form>
+
+
+    </section>
+
+    <footer class="footer">
+        <div>
+            <img src="./assets/imagem/whatsapp.svg" alt=""> (82) 98234-3427
+        </div>
+        <div>
+            <span>Desenvolvido por Williams S. Araujo</span>
+            <span>Criado em 2023 - Atualizado em 04/2024</span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/placeholder.js"></script>
+    <script src="./assets/js/validate.js"></script>
 </body>
+
 </html>

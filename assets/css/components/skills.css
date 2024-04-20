@@ -1,0 +1,52 @@
+@import url('../abstract/variaveis.css');
+
+.skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.skills__title {
+    color: var(--color-primary-text);
+    font-size: var(--size-text-title-m);
+    font-weight: 700;
+}
+
+.skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill__box {
+    align-items: flex-start;
+    background-color: var(--color-tertiary-bd);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: 118px;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 124px;
+}
+
+.skills__name {
+    color: var(--color-primary-text);
+    font-size: var(--size-text-subtitle-m);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .skill__box {
+        width: 202px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills__title {
+        font-size: var(--size-text-title-d);
+    }
+}
