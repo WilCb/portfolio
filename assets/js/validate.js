@@ -9,7 +9,7 @@ function validaformulario(evento){
         alert("Por favor, preencha todos os campos.");
 
     } else {
-        alert('Formulario encaminhado!')
+        alert('Marque a caixa a seguir para finalizar envio!')
     }
 
 }
