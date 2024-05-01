@@ -1,3 +1,5 @@
+@import url('./variaveis.css');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,8 +26,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	background: #F5F5F5;
-    font-family: 'Raleway';
+	background-color: light-dark(var(--color-primary-bd), var(--dark-color-primary-bd));
+    cursor: var(--cursorPointer), auto;
+	font-family: 'Raleway';
 	line-height: 1;
 	font-size: 16px;
 }

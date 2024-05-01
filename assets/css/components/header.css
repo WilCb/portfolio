@@ -16,7 +16,8 @@
 }
 
 .header__title {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
+    cursor: var(--cursorText), auto;
     font-weight: 700;
 }
 
@@ -30,7 +31,8 @@
 }
 
 .menu__contato a {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
+    cursor: var(--cursorText), auto;
     font-size: var(--size-text-text-m);
     font-weight: 400;
 }
@@ -65,6 +67,10 @@
     .link__item {
         display: flex;
         font-weight: 500;
+    }
+
+    .link__item a {
+        cursor: var(--cursorBtn), auto;
     }
 
     .link__item:hover {

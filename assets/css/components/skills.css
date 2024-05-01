@@ -9,7 +9,7 @@
 }
 
 .skills__title {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-title-m);
     font-weight: 700;
 }
@@ -22,8 +22,12 @@
 }
 
 .skill__box {
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
     align-items: flex-start;
-    background-color: var(--color-tertiary-bd);
+    background-color: light-dark(var(--color-tertiary-bd), var(--dark-color-tertiary-bd));
+    border: 1px solid light-dark(var(--color-tertiary-text), var(--dark-color-primary-text));
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -34,7 +38,7 @@
 }
 
 .skills__name {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-subtitle-m);
     font-weight: 700;
 }
@@ -48,5 +52,17 @@
 @media screen and (min-width: 1440px) {
     .skills__title {
         font-size: var(--size-text-title-d);
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
     }
 }

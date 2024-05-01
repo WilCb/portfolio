@@ -9,7 +9,7 @@
 }
 
 .experience__title {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-title-m);
     font-weight: 700;
 }
@@ -22,6 +22,9 @@
 
 .experience__box__img {
     width: 296px;
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
 }
 
 .experience__box__img img {
@@ -35,13 +38,13 @@
 }
 
 .experience__subtitle {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-subtitle-m);
     font-weight: 700;
 }
 
 .experience__text {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-text-m);
     font-weight: 500;
 }
@@ -53,21 +56,38 @@
 
 .btn {
     background-color: transparent;
-    border: 1px solid var(--color-secondary-text);
-    color: var(--color-secondary-text);
+    border: 1px solid light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+    color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
     font-size: var(--size-text-text-m);
     font-weight: 700;
     padding: .75rem 1rem;
+    transition: 1s ease-in-out;
 }
 
 .btn__demo {
-    background-color: var(--color-secondary-text);
+    background-color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
     color: var(--color-tertiary-text);
+    transition: 1s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
     .experience__box__img {
         width: 704px;
+    }
+
+    .btn:hover {
+        background-color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        border-radius: 0.5rem;
+        color: light-dark(var(--color-tertiary-text), var(--dark-btn-text));
+        cursor: var(--cursorBtn),auto;
+        transition: 1s ease-in-out;
+    }
+
+    .btn__demo:hover {
+        background-color: transparent;
+        border-radius: 0.5rem;
+        color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        transition: 1s ease-in-out;
     }
 }
 
@@ -88,5 +108,17 @@
 
     .experience__box__img {
         width: 752px;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
     }
 }

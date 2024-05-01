@@ -3,7 +3,7 @@
 .form {
     display: flex;
     justify-content: center;
-    background-color: var(--color-secondary-bd);
+    background-color: light-dark(var(--color-secondary-bd), var(--dark-color-secondary-bd));
     padding: 2rem;
 }
 
@@ -25,13 +25,13 @@
 }
 
 .form__title {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-title-m);
     font-weight: 700;
 }
 
 .form__text {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-subtitle-m);
     font-weight: 500;
 }
@@ -55,7 +55,7 @@
 }
 
 .placeholder {
-    color: var(--color-placeholder-text);
+    color: light-dark(var(--color-placeholder-text), var(--dark-color-placeholder-text));
     left: 5%;
     position: absolute;
     top: 32%;
@@ -97,6 +97,60 @@
     left: 2%;
 }
 
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .form__input {
         width: 704px;
@@ -111,6 +165,9 @@
 
     .form__img {
         display: block;
+        animation: reveal 1ms ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 50%;
     }
 
     .form__content {
@@ -119,4 +176,23 @@
         width: 728px;
     }
 
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+/* Btn */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }

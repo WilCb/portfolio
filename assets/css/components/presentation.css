@@ -18,13 +18,13 @@
 }
 
 .presentation__title {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-title-t-m);
     font-weight: 700;
 }
 
 .presentation__text {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-text-m);
 }
 
@@ -41,8 +41,13 @@
 }
 
 .presetation__link__item {
-    color: var(--color-primary-text);
+    color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
+    cursor: var(--cursorCursor), auto;
     font-size: var(--size-text-text-m);
+}
+
+.presetation__link__item a {
+    cursor: var(--cursorBtn), auto;
 }
 
 
@@ -64,6 +69,10 @@
 
     .presetation__link__item {
         font-size: var(--size-text-subtitle-m);
+    }
+
+    .presetation__link__item a:hover {
+        color: var();
     }
 }
 
