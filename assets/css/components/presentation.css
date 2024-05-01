@@ -50,6 +50,10 @@
     cursor: var(--cursorBtn), auto;
 }
 
+.presetation__link__item a:hover {
+    font-weight: 900;
+}
+
 
 /* TABLET */
 @media screen and (min-width: 768px) {
