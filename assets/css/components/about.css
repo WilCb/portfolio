@@ -10,12 +10,14 @@
 
 .about__title {
     color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
+    cursor: var(--cursorText), auto;
     font-size: var(--size-text-title-m);
     font-weight: 700;
 }
 
 .about__text {
     color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
+    cursor: var(--cursorText), auto;
     font-size: var(--size-text-text-m);
     line-height: 1.125rem;
 }
