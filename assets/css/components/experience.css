@@ -47,6 +47,7 @@
     color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-text-m);
     font-weight: 500;
+    white-space: pre-line;
 }
 
 .experience__btns {
