@@ -37,6 +37,10 @@
     width: 124px;
 }
 
+.skills__img {
+    width: 32px;
+}
+
 .skills__name {
     color: light-dark(var(--color-primary-text), var(--dark-color-primary-text));
     font-size: var(--size-text-subtitle-m);
