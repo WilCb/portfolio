@@ -1,0 +1,118 @@
+@use '../abstract/variaveis.scss' as v;
+@use '../abstract/mixin' as m;
+
+.experience {
+    @include m.flex-layout($justify: center, $direction: column, $gap: 1rem);
+    padding: v.$spacing-lg;
+
+    .experience__title {
+        color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+        font-size: v.$size-text-title-m;
+        font-weight: v.$weight-bold;
+    }
+
+    .experience__content {
+        @include m.flex-layout($direction: column, $gap: 1rem);
+
+        .experience__box__img {
+            width: 296px;
+            animation: reveal 1ms ease-in-out both;
+            animation-timeline: view();
+            animation-range: entry 25% cover 50%;
+            
+            img {
+                width: 100%;
+            }
+        }
+        .experience__info {
+            @include m.flex-layout($direction: column, $gap: .5rem);
+
+            .experience__subtitle {
+                color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+                font-size: v.$size-text-subtitle-m;
+                font-weight: v.$weight-bold;
+            }
+            
+            .experience__text {
+                color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+                font-size: v.$size-text-text-m;
+                font-weight: v.$weight-medium;
+                white-space: pre-line;
+            }
+            
+            .experience__btns {
+                display: flex;
+                column-gap: 1rem;
+
+                .btn {
+                    background-color: transparent;
+                    border: 1px solid light-dark(v.$color-secondary-text, v.$dark-color-secondary-text);
+                    color: light-dark(v.$color-secondary-text, v.$dark-color-secondary-text);
+                    font-size: v.$size-text-text-m;
+                    font-weight: v.$weight-bold;
+                    padding: .75rem 1rem;
+                    transition: 1s ease-in-out;
+                }
+                
+                .btn__demo {
+                    background-color: light-dark(v.$color-secondary-text, v.$dark-color-secondary-text);
+                    color: v.$color-tertiary-text;
+                    transition: 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-tablet) {
+    .experience__box__img {
+        width: 704px;
+    }
+
+    .btn:hover {
+        background-color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        border-radius: 0.5rem;
+        color: light-dark(var(--color-tertiary-text), var(--dark-btn-text));
+        cursor: var(--cursorBtn), auto;
+        transition: 1s ease-in-out;
+    }
+
+    .btn__demo:hover {
+        background-color: transparent;
+        border-radius: 0.5rem;
+        color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        transition: 1s ease-in-out;
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-desktop) {
+    .experience {
+        padding: 2rem 9.5rem;
+    }
+
+    .experience__content {
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .experience__content--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .experience__box__img {
+        width: 752px;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}

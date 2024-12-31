@@ -1,0 +1,81 @@
+@use './variaveis.scss' as v;
+@use './mixin' as m;
+
+// Reset geral
+%reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+// Aplicando o reset aos elementos
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  @extend %reset;
+}
+
+// Reset específico para HTML5
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+// Estilizações do corpo
+body {
+  @include m.light-dark(v.$color-primary-bd, v.$dark-color-primary-bd);
+  cursor: v.$cursorPointer, auto;
+  font-family: 'Raleway';
+  line-height: 1;
+  font-size: 16px;
+}
+
+// Estilizações comuns para texto
+p, h1, h2, h3, span, input, textarea {
+  cursor: v.$cursorText, auto;
+}
+
+// Estilizações comuns para links e botões
+a, button {
+  cursor: v.$cursorPointer, auto;
+}
+
+// Reset para listas
+ol, ul {
+  list-style: none;
+}
+
+// Reset para blockquote e q
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+
+// Reset para tabelas
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Estilização para links
+a {
+  color: inherit;
+  text-decoration: none;
+}

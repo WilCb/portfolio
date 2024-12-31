@@ -1,0 +1,95 @@
+@use '../abstract/variaveis.scss' as v;
+@use '../abstract/mixin' as m;
+
+.presentation {
+    @include m.flex-layout($direction: column, $gap: 1rem);
+    padding: v.$spacing-md;
+
+    .presentation__profile {
+        width: 98px;
+    }
+
+    .presentation__container {
+        @include m.flex-layout($direction: column, $gap: 1rem);
+
+        .presentation__title {
+            color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+            font-size: v.$size-text-title-m;
+            font-weight: v.$weight-bold;
+        }
+
+        .presentation__text {
+            color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+            font-size: v.$size-text-text-m;
+
+            strong {
+                font-weight: v.$weight-bold;
+            }
+        }
+
+        .presentation__links {
+            @include m.flex-layout($align-items: center, $wrap: wrap, $gap: .5rem, $justify: space-around);
+
+            .presetation__link-item {
+                color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+                font-size: v.$size-text-text-m;
+            }
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: v.$breakpoint-tablet) {
+    .presentation {
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 4rem 2.5rem;
+
+        .presentation__profile {
+            width: 146px;
+        }
+
+        .presentation__container {
+            .presentation__text {
+                font-size: v.$size-text-text-d;
+            }
+
+            .presetation__link-item {
+                font-size: v.$size-text-subtitle-m;
+
+                a {
+                    cursor: v.$cursorBtn, auto;
+
+                    &:hover {
+                        font-weight: v.$weight-super-bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktop
+@media screen and (min-width: v.$breakpoint-large) {
+    .presentation {
+        padding: 2rem 9.5rem;
+
+        .presentation__profile {
+            width: 368px;
+        }
+    }
+
+    .presentation__title {
+        font-size: v.$size-text-supertitle-d;
+    }
+
+    .presentation__text {
+        font-size: v.$size-text-subtitle-d;
+    }
+
+    .presentation__links {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: flex-start;
+    }
+}

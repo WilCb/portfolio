@@ -1,0 +1,102 @@
+@use '../abstract/variaveis.scss' as v;
+@use '../abstract/mixin' as m;
+
+.academic {
+    @include m.flex-layout($align-items: center, $direction: column, $gap: 2rem);
+    background-color: light-dark(v.$color-secondary-bd, v.$dark-color-quaternary-bd);
+    padding: v.$spacing-lg;
+
+    .academic__title {
+        color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+        font-size: v.$size-text-title-m;
+        font-weight: v.$weight-bold;
+    }
+
+    .academic__content {
+        @include m.flex-layout($wrap: wrap, $justify: center, $gap: 1rem);
+
+        .academic__box {
+            @include m.flex-layout($direction: column, $gap: .5rem);
+            width: 296px;
+
+            .academic__image {
+                @include m.flex-layout($align-items: center, $justify: center);
+                background-color: v.$color-tertiary-bd;
+                height: 109px;
+
+                img {
+                    width: 84px;
+                }
+            }
+
+            .academic__box__subtitle {
+                color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+                font-size: v.$size-text-subtitle-m;
+                font-weight: v.$weight-bold;
+            }
+            
+            .academic__box__text {
+                color: light-dark(v.$color-primary-text), v.$dark-color-primary-text;
+                font-size: v.$size-text-text-m;
+                font-weight: v.$weight-medium;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: v.$breakpoint-tablet) {
+
+    .academic {
+        height: 500px;
+        .academic__box {
+            width: 224px;
+        }
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: v.$breakpoint-desktop) {
+
+    .academic__title {
+        font-size: var(--size-text-title-d);
+    }
+
+    .academic__box {
+        width: 368px;
+    }
+
+    .academic__image {
+        height: 286px;
+        animation: reveal 1ms ease-in-out both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 50%;
+
+    }
+
+    .academic__image img {
+        width: 192px;
+    }
+
+    .academic__box__subtitle {
+        font-size: var(--size-text-subtitle-d);
+    }
+
+    .academic__box__text {
+        font-size: var(--size-text-text-d);
+    }
+
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}

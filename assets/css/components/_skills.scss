@@ -1,0 +1,68 @@
+@use '../abstract/variaveis.scss' as v;
+@use '../abstract/mixin' as m;
+
+.skills {
+    @include m.flex-layout($align-items: center, $direction: column, $gap: 2rem);
+    padding: v.$spacing-md;
+
+    .skills__title {
+        color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+        font-size: v.$size-text-title-m;
+        font-weight: v.$weight-bold;
+    }
+
+    .skills__content {
+        @include m.flex-layout($wrap: wrap, $align-items: center, $justify: center, $gap: 1rem);
+
+        .skill__box {
+            animation: reveal 1ms ease-in-out both;
+            animation-timeline: view();
+            animation-range: entry 120% cover 20%;
+            align-items: flex-start;
+            background-color: light-dark(v.$color-tertiary-bd, v.$dark-color-tertiary-bd);
+            border: 1px solid light-dark(v.$color-tertiary-text, v.$dark-color-primary-text);
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            height: 118px;
+            justify-content: flex-end;
+            padding: 1rem;
+            width: 124px;
+        }
+        .skills__img {
+            width: 60px;
+        }
+        .skills__name {
+            color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+            font-size: v.$size-text-subtitle-m;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-tablet) {
+    .skills {
+        padding: 2rem .2rem 5rem;
+        .skill__box {
+            width: 202px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills__title {
+        font-size: v.$size-text-title-d;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
