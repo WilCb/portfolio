@@ -1,0 +1,24 @@
+@use '../abstract/variaveis' as v;
+
+.whats__btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+    img {
+        width: 64px;
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-tablet) {
+    .whats__btn {
+
+        img {
+            transition: transform .5s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}

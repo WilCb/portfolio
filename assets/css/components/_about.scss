@@ -11,6 +11,7 @@
         font-size: v.$size-text-title-m;
         font-weight: v.$weight-bold;
     }
+
     .about__text {
         color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
         font-size: v.$size-text-text-m;
@@ -34,12 +35,24 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: v.$breakpoint-desktop) {
     .about {
-        padding: 4rem;
-    }
+        padding: v.$spacing-xl;
 
-    .about__text {
-        font-size: var(--size-text-text-d);
+        .about__text {
+            font-size: v.$size-text-text-d;
+        }
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-desktop) {
+    .about {
+        .about__title {
+            font-size: v.$size-text-supertitle-d;
+        }
+        .about__text {
+            font-size: v.$size-text-subtitle-d;
+            line-height: 1.875rem;
+        }
     }
 }

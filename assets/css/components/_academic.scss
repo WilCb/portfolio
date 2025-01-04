@@ -44,7 +44,7 @@
     }
 }
 
-/* Tablet */
+// 768px
 @media screen and (min-width: v.$breakpoint-tablet) {
 
     .academic {
@@ -56,37 +56,70 @@
 
 }
 
-/* Desktop */
+// 1024px
 @media screen and (min-width: v.$breakpoint-desktop) {
 
-    .academic__title {
-        font-size: var(--size-text-title-d);
+    .academic {
+        .academic__title {
+            font-size: v.$size-text-title-d;
+        }
+
+        .academic__content {
+            .academic__box {
+                width: 368px;
+                .academic__image {
+                    height: 286px;
+                    animation: reveal 1ms ease-in-out both;
+                    animation-timeline: view();
+                    animation-range: entry 25% cover 50%;
+
+                    img {
+                        width: 192px;
+                    }
+            
+                }
+                .academic__box__subtitle {
+                    font-size: v.$size-text-subtitle-d;
+                }
+                .academic__box__text {
+                    font-size: var(--size-text-text-d);
+                }
+            }
+        }    
     }
+}
 
-    .academic__box {
-        width: 368px;
+// 1200px
+@media screen and (min-width: v.$breakpoint-large) {
+
+    .academic {
+        .academic__title {
+            font-size: v.$size-text-supertitle-d;
+        }
+
+        .academic__content {
+            .academic__box {
+                width: 368px;
+                .academic__image {
+                    height: 286px;
+                    animation: reveal 1ms ease-in-out both;
+                    animation-timeline: view();
+                    animation-range: entry 25% cover 50%;
+
+                    img {
+                        width: 192px;
+                    }
+            
+                }
+                .academic__box__subtitle {
+                    font-size: v.$size-text-subtitle-d;
+                }
+                .academic__box__text {
+                    font-size: var(--size-text-text-d);
+                }
+            }
+        }    
     }
-
-    .academic__image {
-        height: 286px;
-        animation: reveal 1ms ease-in-out both;
-        animation-timeline: view();
-        animation-range: entry 25% cover 50%;
-
-    }
-
-    .academic__image img {
-        width: 192px;
-    }
-
-    .academic__box__subtitle {
-        font-size: var(--size-text-subtitle-d);
-    }
-
-    .academic__box__text {
-        font-size: var(--size-text-text-d);
-    }
-
 }
 
 @keyframes reveal {

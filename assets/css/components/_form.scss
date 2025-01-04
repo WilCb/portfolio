@@ -100,31 +100,38 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: v.$breakpoint-tablet) {
     .form__input {
         width: 704px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: v.$breakpoint-desktop) {
 
     .form {
+        display: flex;
+        flex-direction: row;
         gap: 2rem;
-    }
 
-    .form__img {
-        display: block;
-        animation: reveal 1ms ease-in-out both;
-        animation-timeline: view();
-        animation-range: entry 25% cover 50%;
-    }
+        .form__img {
+            display: block;
+            animation: reveal 1ms ease-in-out both;
+            animation-timeline: view();
+            animation-range: entry 25% cover 50%;
+        }
 
-    .form__content {
-        align-items: flex-start;
-        justify-content: space-between;
-        width: 728px;
+        .form__content {
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 728px;
+        }
     }
+}
 
+@media screen and (min-width: v.$breakpoint-large) {
+    .form {
+        justify-content: center;
+    }
 }
 
 @keyframes reveal {

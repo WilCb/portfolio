@@ -48,7 +48,7 @@
 @media screen and (min-width: v.$breakpoint-desktop) {
 
     .header__container {
-        padding: 2.125rem 9.5rem;
+        padding: v.$spacing-lg v.$spacing-xl;
 
         .links {
             @include m.flex-layout($align-items: center, $gap: 1.5rem);
@@ -57,13 +57,13 @@
                 display: flex;
                 font-weight: 500;
 
-                a {
-                    cursor: v.$cursorBtn, auto;
-                }
-
                 &:hover {
                     font-weight: 700;
-                    text-decoration: underline .25rem;
+                    text-decoration: underline v.$spacing-xs;
+                }
+
+                a {
+                    cursor: v.$cursorBtn, auto;
                 }
             }
         }

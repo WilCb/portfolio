@@ -38,7 +38,7 @@
     }
 }
 
-/* TABLET */
+// 768px
 @media screen and (min-width: v.$breakpoint-tablet) {
     .presentation {
         align-items: center;
@@ -69,10 +69,10 @@
     }
 }
 
-// Desktop
-@media screen and (min-width: v.$breakpoint-large) {
+// 1024px
+@media screen and (min-width: v.$breakpoint-desktop) {
     .presentation {
-        padding: 2rem 9.5rem;
+        padding: v.$spacing-lg v.$spacing-xl;
 
         .presentation__profile {
             width: 368px;
@@ -91,5 +91,40 @@
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: flex-start;
+    }
+}
+
+// 1200px
+@media screen and (min-width: v.$breakpoint-large) {
+    .presentation {
+        padding: v.$spacing-lg v.$spacing-xl;
+
+        .presentation__container {
+
+            .presentation__title {
+                font-size: v.$size-text-supertitle-d;
+            }
+
+            .presentation__text {
+                font-size: v.$size-text-subtitle-d;
+            }
+
+            .presentation__links {
+                justify-content: center;
+                gap: 1.5rem;
+
+                // border: 1px solid;
+                padding: 1rem;
+                background-color: light-dark(v.$dark-color-quaternary-bd,v.$dark-color-quaternary-bd);
+
+                a {
+                    font-size: v.$size-text-subtitle-d;
+                    &:hover {
+                        text-decoration: 5px underline;
+                    }
+                }
+                
+            }
+        }
     }
 }

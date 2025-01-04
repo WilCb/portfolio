@@ -3,13 +3,16 @@
 
 .footer {
     @include m.flex-layout($align-items: center, $direction: column, $gap: .5rem);
+
     text-align: center;
     padding: v.$spacing-lg;
+    margin: 5rem 0 5rem 0;
     background-color: light-dark(v.$color-tertiary-bd, v.$dark-color-secondary-bd);
-}
 
-.footer span {
-    color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
-    font-size: v.$size-text-subtitle-m;
-    font-weight: v.$weight-medium;
+    p {
+        color: light-dark(v.$color-primary-text, v.$dark-color-primary-text);
+        font-size: v.$size-text-subtitle-m;
+        font-weight: v.$weight-medium;
+    }
+
 }

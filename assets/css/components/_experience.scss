@@ -75,17 +75,17 @@
     }
 
     .btn:hover {
-        background-color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        background-color: light-dark(v.$color-secondary-text, v.$dark-color-secondary-text);
         border-radius: 0.5rem;
-        color: light-dark(var(--color-tertiary-text), var(--dark-btn-text));
-        cursor: var(--cursorBtn), auto;
+        color: light-dark(v.$color-tertiary-text, v.$dark-btn-text);
+        cursor: v.$cursorBtn, auto;
         transition: 1s ease-in-out;
     }
 
     .btn__demo:hover {
         background-color: transparent;
         border-radius: 0.5rem;
-        color: light-dark(var(--color-secondary-text), var(--dark-color-secondary-text));
+        color: light-dark(v.$color-secondary-text, v.$dark-color-secondary-text);
         transition: 1s ease-in-out;
     }
 }
@@ -93,21 +93,21 @@
 @media screen and (min-width: v.$breakpoint-desktop) {
     .experience {
         padding: 2rem 9.5rem;
+        .experience__content {
+            align-items: center;
+            flex-direction: row;
+            gap: 2rem;
+            
+            .experience__box__img {
+                width: 752px;
+            }
+        }
+        .experience__content--reverse {
+            flex-direction: row-reverse;
+        }
+    
     }
 
-    .experience__content {
-        align-items: center;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .experience__content--reverse {
-        flex-direction: row-reverse;
-    }
-
-    .experience__box__img {
-        width: 752px;
-    }
 }
 
 @keyframes reveal {
