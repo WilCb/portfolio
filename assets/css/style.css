@@ -638,9 +638,10 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .experience {
-    padding: 2rem 9.5rem;
+    padding: 2rem 8rem;
   }
   .experience .experience__content {
+    position: relative;
     align-items: center;
     flex-direction: row;
     gap: 2rem;
@@ -648,8 +649,25 @@ a {
   .experience .experience__content .experience__box__img {
     width: 752px;
   }
-  .experience .experience__content--reverse {
-    flex-direction: row-reverse;
+  .experience .experience__content .experience__box__img:hover + .experience__info {
+    opacity: 1;
+    visibility: visible;
+  }
+  .experience .experience__content .experience__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1.5s ease, visibility 1.5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .experience .experience__content .experience__info:hover {
+    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes reveal {
