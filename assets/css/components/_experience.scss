@@ -97,10 +97,14 @@
 
 @media screen and (min-width: v.$breakpoint-desktop) {
     .experience {
-        padding: v.$spacing-lg v.$spacing-xxxl;
+        padding: v.$spacing-lg;
 
         .experience__title {
             font-size: v.$size-text-supertitle-d;
+        }
+
+        .experience__text {
+            text-align: center;
         }
 
         .experience__container {
@@ -111,7 +115,7 @@
                 align-items: center;
                 flex-direction: row;
                 gap: 2rem;
-                width: 600px;
+                width: 400px;
 
                 .experience__box__img {
                     width: 100%;

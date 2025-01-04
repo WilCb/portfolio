@@ -647,10 +647,13 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .experience {
-    padding: 2rem 8rem;
+    padding: 2rem;
   }
   .experience .experience__title {
     font-size: 3.25rem;
+  }
+  .experience .experience__text {
+    text-align: center;
   }
   .experience .experience__container {
     flex-direction: row;
@@ -661,7 +664,7 @@ a {
     align-items: center;
     flex-direction: row;
     gap: 2rem;
-    width: 600px;
+    width: 400px;
   }
   .experience .experience__container .experience__content .experience__box__img {
     width: 100%;
