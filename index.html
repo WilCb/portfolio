@@ -231,7 +231,8 @@
 
     <section class="form">
         <img class="form__img" src="assets/image/contact_image.png">
-        <form class="form__content" action="https://formsubmit.co/williamsaraujo.dev@gmail.com" method="POST">
+        <form class="form__content" action="" method="POST" name="contact" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form__presentation">
                 <h2 class="form__title">Contato</h2>
                 <p class="form__text">Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato
@@ -262,7 +263,7 @@
                 </div>
 
             </div>
-            <button class="glow-on-hover" id="btn_enviar">Enviar mensagem</button>
+            <button class="glow-on-hover" id="btn_enviar" type="submit">Enviar mensagem</button>
         </form>
 
 
@@ -281,6 +282,7 @@
 
     <script src="./assets/js/placeholder.js"></script>
     <script src="./assets/js/validate.js"></script>
+    <script src="./assets/js/enviarMensagem.js"></script>
 </body>
 
 </html>
