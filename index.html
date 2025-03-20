@@ -241,24 +241,22 @@
             </div>
             <div class="form__inputs">
                 <div class="input__box">
-                    <input class="form__input" type="text" id="nome" name="nome" placeholder="">
+                    <input class="form__input" type="text" id="nome" name="nome" placeholder="" required>
                     <span class="placeholder">Nome</span>
                 </div>
 
                 <div class="input__box">
-                    <input class="form__input form__input__email" type="email" id="email" name="email" placeholder=""
-                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    <input class="form__input form__input__email" type="email" id="email" name="email" placeholder="" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                     <span class="placeholder placeholder__email">E-mail</span>
                 </div>
 
                 <div class="input__box">
-                    <input class="form__input" type="text" id="assunto" name="assunto" placeholder="">
+                    <input class="form__input" type="text" id="assunto" name="assunto" placeholder="" required>
                     <span class="placeholder">Assunto</span>
                 </div>
 
                 <div class="input__box">
-                    <textarea class="form__input" rows="5" cols="40" id="mensagem" name="mensagem"
-                        placeholder=""></textarea>
+                    <textarea class="form__input" rows="5" cols="40" id="mensagem" name="mensagem" required placeholder=""></textarea>
                     <span class="placeholder placeholder__textarea">Mensagem</span>
                 </div>
 
@@ -281,7 +279,7 @@
 
 
     <script src="./assets/js/placeholder.js"></script>
-    <script src="./assets/js/validate.js"></script>
+    <!-- <script src="./assets/js/validate.js"></script> -->
     <script src="./assets/js/enviarMensagem.js"></script>
 </body>
 

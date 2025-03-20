@@ -1,8 +1,14 @@
-const handleSubmit = event => {
-    event.preventDefault();
+const handleSubmit = e => {
+    e.preventDefault();
   
-    const myForm = event.target;
+    const myForm = e.target;
     const formData = new FormData(myForm);
+
+    const form = document.querySelector("form");
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
   
     fetch("/", {
       method: "POST",
