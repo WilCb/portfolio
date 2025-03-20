@@ -15,7 +15,7 @@ const handleSubmit = e => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     })
-      .then(() => alert("Form successfully submitted"))
+      .then(() => alert("Mensagem enviada com sucesso !"))
       .catch(error => alert(error));
   };
   
