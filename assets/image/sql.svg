@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" role="img" aria-label="SQL">
+  <defs>
+    <linearGradient id="bg" x1="14" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="76" height="76" rx="18" fill="url(#bg)"/>
+  <rect x="10" y="10" width="76" height="76" rx="18" fill="#000" fill-opacity="0.08"/>
+
+  <!-- Database cylinder -->
+  <g transform="translate(0 2)">
+    <ellipse cx="48" cy="33" rx="18" ry="7.5" fill="#0B1220" fill-opacity="0.92"/>
+    <path d="M30 33v22c0 4.1 8.1 7.5 18 7.5s18-3.4 18-7.5V33c0 4.1-8.1 7.5-18 7.5S30 37.1 30 33Z" fill="#0B1220" fill-opacity="0.80"/>
+    <path d="M30 44.5c0 4.1 8.1 7.5 18 7.5s18-3.4 18-7.5" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M30 55.5c0 4.1 8.1 7.5 18 7.5s18-3.4 18-7.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- SQL label -->
+  <rect x="26" y="63" width="44" height="16" rx="8" fill="#FFFFFF" fill-opacity="0.92"/>
+  <path d="M35.3 74.2c-2.5 0-4.2-1.1-4.4-3.2h2.3c.1.9.9 1.4 2.1 1.4 1.2 0 2-.4 2-1.1 0-.6-.5-1-1.7-1.2l-1.4-.3c-2.1-.4-3.2-1.4-3.2-3 0-1.9 1.7-3.1 4.1-3.1 2.4 0 4 1.2 4.1 3.1h-2.2c-.1-.9-.8-1.3-1.9-1.3s-1.8.4-1.8 1.1c0 .6.5.9 1.6 1.1l1.2.2c2.4.5 3.5 1.4 3.5 3.1 0 2-1.7 3.2-4.3 3.2Zm12.1 0c-2.9 0-4.8-2-4.8-5.3s1.9-5.3 4.8-5.3c2.8 0 4.7 2 4.7 5.3s-1.9 5.3-4.7 5.3Zm0-1.9c1.6 0 2.5-1.2 2.5-3.4s-.9-3.4-2.5-3.4c-1.6 0-2.5 1.2-2.5 3.4s.9 3.4 2.5 3.4Zm7.4 1.7V63.7h2.3v8.4h4.7V74h-7Z" fill="#0B1220" fill-opacity="0.92"/>
+</svg>
+
